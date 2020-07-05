@@ -1,0 +1,59 @@
+/* === Base Options === */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+a, p, h2, h6, input {
+  margin-bottom: 1.071rem
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* === Typography === */
+
+body {
+  color: #211138;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+p, .search-bar_input-field, .chat-room_input-field, .chat-room-header_contact-name {
+  letter-spacing: 0px;
+}
+
+.chat-contacts_name, .chat-contacts_add-new-contact--button, .chat-room-header_student-name, .chat-room_timestamp {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.4;
+}
+
+.chat-contacts_name, .chat-contacts_add-new-contact--button {
+  color: #6200ea;
+}
+
+.chat-room-header_contact-name, .chat-room-header_student-name, .chat-room_student-answer {
+  color: #ffffff;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.chat-room-header_contact-name {
+  font-size: 20px;
+}
+
+.input-field::placeholder {
+  opacity: 0.25;
+}

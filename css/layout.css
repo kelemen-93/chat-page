@@ -1,0 +1,34 @@
+/* === Layout  === */
+
+.layout_item--full-width {
+  width: 100%;
+}
+
+.layout_item--75-percent {
+  width: 75%;
+}
+
+.layout_item--25-percent {
+  width: 25%;
+}
+
+.layout_item--centered-horizontally {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout_item--float-left {
+  float: left;
+}
+
+.layout_item--float-right {
+  float: right;
+}
+
+/* === Helpers === */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
