@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Chat Room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/reset.css" rel="stylesheet">
@@ -19,10 +20,10 @@
     <div class="left-column layout_item--25-percent layout_item--float-left">
       
       <div class="search-bar-container">
-        <div class="search-bar-wrapper">
-          <input type="search" placeholder="Search" class="search-bar_input-field input-field">
-          <a href="#" class="search-bar_search-button button"><i class="fas fa-search"></i></a>
-        </div>
+        <form class="search-bar-wrapper">
+          <input type="text" placeholder="Search" class="search-bar_input-field input-field">
+          <button type="submit" class="search-bar_search-button icon-button"><i class="fas fa-search"></i></button>
+        </form>
       </div> <!-- search-bar ends here -->
     
       <div class="chat-contacts-container">
@@ -33,31 +34,31 @@
           <p class="chat-contacts_message">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
         
-        <div class="chat-contact">
+        <div class="chat-contacts">
           <img src="assets/user_avatar_02.png" alt="chat picture" class="chat-contacts_picture">
           <h6 class="chat-contacts_name">Marc</h6>
           <p class="chat-contacts_message">Phasellus posuere ante et lectus ultricies</p>
         </div>
         
-        <div class="chat-contact">
+        <div class="chat-contacts">
           <img src="assets/user_avatar_03.png" alt="chat picture" class="chat-contacts_picture">
           <h6 class="chat-contacts_name">Jacob</h6>
           <p class="chat-contacts_message"></p>
         </div>
         
-        <div class="chat-contact">
+        <div class="chat-contacts">
           <img src="assets/user_avatar_04.png" alt="chat picture" class="chat-contacts_picture">
           <h6 class="chat-contacts_name">Chris Smith</h6>
           <p class="chat-contacts_message">Quisque odio velit, pellentesque at ante vel, placerat</p>
         </div>
         
-        <div class="chat-contact">
+        <div class="chat-contacts">
           <img src="assets/user_avatar_05.png" alt="chat picture" class="chat-contacts_picture">
           <h6 class="chat-contacts_name">Mia Wong</h6>
           <p class="chat-contacts_message">Duis auctor accumsan quam, eget dapibus ipsum</p>
         </div>
         
-        <div class="chat-contact">
+        <div class="chat-contacts">
           <img src="assets/user_avatar_06.png" alt="chat picture" class="chat-contacts_picture">
           <h6 class="chat-contacts_name">Jane</h6>
           <p class="chat-contacts_message">Vestibulum convallis arcu eget libero</p>
@@ -182,11 +183,11 @@
       <div class="chat-room_input-field-container">
         
         <textarea id="message" name="message" placeholder="Type your message ..." class="chat-room_input-field input-field">
-          <a href="#" class="chat-room_input-field--button button"><i class="fas fa-paperclip"></i></a>
-          <a href="#" class="chat-room_input-field--button button"><i class="far fa-smile"></i></a>
+          <a href="#" class="chat-room_input-field--button icon-button"><i class="fas fa-paperclip"></i></a>
+          <a href="#" class="chat-room_input-field--button icon-button"><i class="far fa-smile"></i></a>
         </textarea>
         
-        <a href="#" class="chat-room_send-message--button button"><i class="far fa-paper-plane"></i></a>
+        <a href="#" class="chat-room_send-message--button"><i class="send-message-icon far fa-paper-plane"></i></a>
 
       </div> <!-- chat-room_input-fieldcontainer ends here -->
        
