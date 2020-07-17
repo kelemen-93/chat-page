@@ -15,60 +15,72 @@
 </head>
 <body>
   
-  <div class="layout layout_item--full-width clearfix">
+  <div class="layout clearfix">
     
     <div class="left-column layout_item--25-percent layout_item--float-left">
       
       <div class="search-bar-container">
         <form class="search-bar-wrapper">
-          <input type="text" placeholder="Search" class="search-bar_input-field input-field">
-          <button type="submit" class="search-bar_search-button icon-button"><i class="fas fa-search"></i></button>
+          <input type="text" id="search" name="search" placeholder="Search" class="search-bar_input-field input-field">
+          <button type="submit" class="search-bar_search-button"><i class="icon fas fa-search"></i></button>
         </form>
       </div> <!-- search-bar ends here -->
     
-      <div class="chat-contacts-container">
+      <ul class="chat-contacts-container">
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_01.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Amy Adams</h6>
-          <p class="chat-contacts_message">Lorem ipsum dolor sit amet, consectetur</p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_01.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Amy Adams</h6>
+            <p class="chat-contacts_message">Lorem ipsum dolor sit amet, consectetur</p>
+          </a>
+        </li>
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_02.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Marc</h6>
-          <p class="chat-contacts_message">Phasellus posuere ante et lectus ultricies</p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_02.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Marc</h6>
+            <p class="chat-contacts_message">Phasellus posuere ante et lectus ultricies</p>
+          </a>
+        </li>
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_03.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Jacob</h6>
-          <p class="chat-contacts_message"></p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_03.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Jacob</h6>
+            <p class="chat-contacts_message"></p>
+          </a>
+        </li>
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_04.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Chris Smith</h6>
-          <p class="chat-contacts_message">Quisque odio velit, pellentesque at ante vel, placerat</p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_04.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Chris Smith</h6>
+            <p class="chat-contacts_message">Quisque odio velit, pellentesque at ante vel, placerat</p>
+          </a>
+        </li>
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_05.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Mia Wong</h6>
-          <p class="chat-contacts_message">Duis auctor accumsan quam, eget dapibus ipsum</p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_05.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Mia Wong</h6>
+            <p class="chat-contacts_message">Duis auctor accumsan quam, eget dapibus ipsum</p>
+          </a>
+        </li>
         
-        <div class="chat-contacts">
-          <img src="assets/user_avatar_06.png" alt="chat picture" class="chat-contacts_picture">
-          <h6 class="chat-contacts_name">Jane</h6>
-          <p class="chat-contacts_message">Vestibulum convallis arcu eget libero</p>
-        </div>
+        <li class="chat-contacts">
+          <a class="contact clearfix">
+            <img src="assets/user_avatar_06.png" alt="chat picture" class="user-avatar">
+            <h6 class="chat-contacts_name">Jane</h6>
+            <p class="chat-contacts_message">Vestibulum convallis arcu eget libero</p>
+          </a>
+        </li>
         
         <div>
-          <a href="#" class="chat-contacts_add-new-contact--button button">Add new contact</a>
+          <a href="#" class="button chat-contacts_add-new-contact--button">Add new contact</a>
         </div>
         
-      </div> <!--chat-contacts-container ends here -->
+      </ul> <!--chat-contacts-container ends here -->
       
       
     </div> <!-- left-column ends here -->
@@ -82,7 +94,7 @@
           <h2 class="chat-room-header_contact-name">Amy Adams</h2>
         </div>
         
-        <div>
+        <div class="chat-room-header_logo--wrapper">
           <img src="assets/logo_50.svg" alt="logo" class="chat-room-header_logo">
         </div>
         
@@ -91,30 +103,30 @@
         </div>
         
         <div class="chat-room-header_student-picture--wrapper">
-          <img src="assets/user_avatar_07.png" alt="chat picture" class="chat-room-header_student-picture">
+          <img src="assets/user_avatar_07.png" alt="chat picture" class="user-avatar user-avatar--in-chat-header">
         </div>
         
       </div> <!-- chatroom-header ends here  -->
       
       <div class="chat-room-container">
         
-        <div class="chat-room-container_wrapper">
+        <div class="chat-room-container_wrapper layout_item--centered-horizontally">
           
           <div class="chat-room_contact-part-one">
             
             <div>
-              <h6 class="chat-room_timestamp">Amy, 11:37</h6>
+              <h6 class="chat-room_timestamp timestamp-amy timestamp-one">Amy, 11:37</h6>
             </div>
             
             <div>
-              <img src="assets/user_avatar_01.png" alt="chat picture" class="chat-room_picture">
+              <img src="assets/user_avatar_01.png" alt="chat picture" class="user-avatar">
             </div>
             
-            <div class="chat-room_contact-message">
+            <div class="chat-room_contact-message message-amy">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales sapien a varius tincidunt. In hac habitasse platea dictumst. </p>
             </div>
             
-            <div class="chat-room_contact-message">
+            <div class="chat-room_contact-message message-amy">
               <p>Phasellus posuere ante et lectus ultricies mollis.</p>
             </div>
             
@@ -123,14 +135,14 @@
           <div class="chat-room_student-part-one">
             
             <div>
-              <img src="assets/user_avatar_07.png" alt="chat picture" class="chat-room_picture">
+              <img src="assets/user_avatar_07.png" alt="chat picture" class="user-avatar user-avatar--message-self">
             </div>
             
             <div>
-              <h6 class="chat-room_timestamp">11:40</h6>
+              <h6 class="chat-room_timestamp student-timestamp timestamp-two">11:40</h6>
             </div>
             
-            <div class="chat-room_student-answer">
+            <div class="chat-room_student-answer student-answer">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales sapien a varius tincidunt. In hac habitasse platea dictumst. </p>
             </div>
             
@@ -139,14 +151,14 @@
           <div class="chat-room_contact-part-two">
             
             <div>
-              <h6 class="chat-room_timestamp">Amy, 11:37</h6>
+              <h6 class="chat-room_timestamp timestamp-amy timestamp-three">Amy, 11:37</h6>
             </div>
             
             <div>
-              <img src="assets/user_avatar_01.png" alt="chat picture" class="chat-room_picture">
+              <img src="assets/user_avatar_01.png" alt="chat picture" class="user-avatar">
             </div>
             
-            <div class="chat-room_contact-message">
+            <div class="chat-room_contact-message message-amy">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales sapien a varius tincidunt. In hac habitasse platea dictumst. </p>
             </div>
             
@@ -155,25 +167,25 @@
           <div class="chat-room_student-part-two">
             
             <div>
-              <img src="assets/user_avatar_07.png" alt="chat picture" class="chat-room_picture">
+              <img src="assets/user_avatar_07.png" alt="chat picture" class="user-avatar user-avatar--message-self">
             </div>
             
             <div>
-              <h6 class="chat-room_timestamp">11:40</h6>
+              <h6 class="chat-room_timestamp student-timestamp timestamp-four">11:40</h6>
             </div>
             
-            <div class="chat-room_student-answer">
+            <div class="chat-room_student-answer student-answer">
               <p>Nunc sollicitudin sapien non eleifend semper.</p>
             </div>
             
-            <div class="chat-room_student-answer">
+            <div class="chat-room_student-answer student-answer">
               <p>In hac habitasse platea dictumst.</p>
             </div>
             
           </div> <!-- chat-room_student-part-two ends here -->
           
           <div class="chat-room_bottom-part">
-              <h6 class="chat-room_timestamp">Amy is typing</h6>
+              <h6 class="chat-room_timestamp timestamp-amy timestamp-five">Amy is typing</h6>
           </div>
           
         </div>
@@ -182,13 +194,13 @@
       
       <div class="chat-room_input-field-container">
         
-        <textarea id="message" name="message" placeholder="Type your message ..." class="chat-room_input-field input-field">
-          <a href="#" class="chat-room_input-field--button icon-button"><i class="fas fa-paperclip"></i></a>
-          <a href="#" class="chat-room_input-field--button icon-button"><i class="far fa-smile"></i></a>
-        </textarea>
-        
-        <a href="#" class="chat-room_send-message--button"><i class="send-message-icon far fa-paper-plane"></i></a>
-
+          <textarea id="message" name="message" placeholder="Type your message ..." class="message-editor_textarea"></textarea>
+          <a href="#" class="message-editor_attachment"><i class="icon icon--attach-file fas fa-paperclip"></i></a>
+          <a href="#" class="message-editor_attachment"><i class="icon icon--emoji far fa-smile"></i></a>
+          <button type="submit" class="message-editor_send-message button button--primary-solid">
+           <i class="icon icon--send far fa-paper-plane"></i>
+          </button>
+       
       </div> <!-- chat-room_input-fieldcontainer ends here -->
        
       

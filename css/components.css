@@ -13,58 +13,54 @@
   padding: 18px 0px 17px;
 }
 
-/* === Icon Button === */
+/* === Icons === */
 
-.icon-button{
-  text-align: center;
-  font-size: 20px;
-  background-color: #f3f4f5;
+.icon {
+  font-size: 2.2222vh;
   opacity: 0.25;
 }
 
-/* === Header Logo ===*/
+.icon--emoji, .icon--attach-file {
+  position: absolute;
+  /*Pozícionálás!!!!*/
+}
 
-.chat-room-header_logo {
+.icon--attach-file {
   
 }
 
+.icon--send {
+  opacity: 1;
+  /*Pozícionálás!!!!*/
+}
 
 /* === Chat Pictures === */
 
-.chat-contacts_picture, .chat-room_picture, .chat-room-header_student-picture {
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  border-radius: 24px;
-  text-align: center;
-}
-
-.chat-room-header_student-picture {
-  height: 40px;
-  width: 40px;
-}
-
-/* === Send Message Button  === */
-
-.chat-room_send-message--button {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: .714rem;
+.user-avatar {
+  float: left;
+  height: 5.5555vh;
+  width: 5.5555vh;
   border-radius: 50%;
-  background-color: #6200ea;
-  text-align: center;
+  margin-right: 0.9375vw;
+  object-fit: cover;
 }
 
-.send-message-icon {
-  color: #ffffff;
-  font-size: 20px;
+.user-avatar--in-chat-header {
+  position: absolute;
+  top: 2.2222vh;
+  left: 71.25vw;
+  height: 4.4444vh;
+  width: 4.4444vh;
+  margin-right: 0;
 }
 
-/* === Full Layout === */ /* Ideiglenes rész!!!*/
-
-.layout {
+.user-avatar--message-self {
+  position: absolute;
+  bottom: 1.1111vh;
+  right: 0;
+  margin-right: 0;
 }
+
 
 /* === Left Column === */
 
@@ -76,45 +72,49 @@
 /* === Search Bar === */
 
 .search-bar-container {
-  height: 8.88vh;
-  width: 400px;
   position: relative;
-  border-bottom: 1px solid #f3f4f5;
-  
+  height: 8.88vh;
+  border-bottom: 0.1111vh solid #f3f4f5;
 }
 
+
 .search-bar_input-field {
-  padding: 16px 0px 15px 24px;
   position: absolute;
-  display: block;
-  top: 15px;
-  left: 15px;
-  margin-bottom: 15px;
+  top: 1.6666vh;
+  left: 0.9375vw;
+  width: 20vw;
+  height: 5.5555vh;
+  padding: 1.7777vh 0px 1.4444vh 1.5vw;
   border: 0;
-  border-bottom: 1px solid;
+  border-bottom: 0.3333vh solid;
   border-color: transparent;
-  background-color: #f3f4f5;
-  height: 50px;
-  width: 320px;
+  margin-bottom: 1.6666vh;
+  background-color: #f4f3f5;
+  outline: none;
+}
+
+.search-bar_input-field:focus {
+  border-bottom-color: #6200ea;
 }
 
 
 .search-bar_search-button {
-  padding: 15px;
   position: absolute;
-  top: 15px;
-  left: 335px;
-  height: 50px;
-  width: 50px;
-  background-color: #f3f4f5;
+  top: 1.6666vh;
+  left: 20.9375vw;
+  height: 5.5555vh;
+  width: 5.5555vh;
+  padding: 1.6666vh;
   border: none;
+  background-color: #f4f3f5;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* === Chat Contacts === */
 
 .chat-contacts {
   height: 80px;
-  width: 100%;;
   border-top: 1px solid #f3f4f5;
   border-bottom: 1px solid #f3f4f5;
   position: relative;
@@ -125,23 +125,116 @@
   border-left: 5px solid #6200ea;
 }
 
+.chat-contacts_picture, .chat-contacts_name, .chat-contacts_message {
+  position: absolute;
+}
+
 .chat-contacts_picture {
-  position: relative;
   top: 15px;
   left: 15px;
   margin-bottom: 14px;
 }
 
 .chat-contacts_name {
-  position: relative;
   left: 80px;
   bottom: 45px;
   margin-bottom: 5px;
 }
 
 .chat-contacts_message {
-  position: relative;
   left: 80px;
-  top: -40px;
+  top: 40px;
   margin-bottom: 20px;
 }
+
+/* === Right Column === */
+
+.right-column {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+
+
+/* === Chat Room Header === */
+
+/*
+
+.chat-room-header {
+  height: 80px;
+  width: 75vw;
+  background-color: #6200ea;
+  position: relative;
+}
+
+.chat-room-header_contact-name--wrapper, .chat-room-header_logo--wrapper, .chat-room-header_student-name--wrapper, .chat-room-header_student-picture--wrapper {
+  position: absolute;
+}
+
+
+.chat-room-header_contact-name--wrapper {
+  top: 28px;
+  left: 30px;
+}
+
+.chat-room-header_logo--wrapper {
+  left: 510px;
+  top: 15px;
+}
+
+.chat-room-header_student-name--wrapper {
+  left: 62vw;
+  top: 33px;
+}
+
+.chat-room-header_student-picture--wrapper {
+  left: 71.25vw;
+  top: 20px;
+}
+
+*/
+
+/* === Chat Room === */
+
+/*
+
+.chat-room-container {
+  background-color: #f3f4f5;
+  padding-top: 40px;
+}
+
+.chat-room-container_wrapper {
+  position: relative;
+  width: 67.5vw;
+  height: 63.89vh;
+}
+
+.timestamp-amy, .picture-amy, .message-amy, .student-timestamp, .student-message, .student-picture {
+  position: absolute;
+}
+
+.timestamp-one {
+  left: 60px;
+}
+
+.timestamp-two {
+  top: 180px;
+  left: 1020px;
+}
+
+.timestamp-three {
+  top: 290px;
+  left: 60px;
+}
+
+.timestamp-four {
+  top: 400px;
+  left: 1020px;
+}
+
+.timestamp-five {
+  top: 560px;
+  left: 60px;
+}
+
+*/

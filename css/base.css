@@ -8,7 +8,11 @@ html {
   font-size: 14px;
 }
 
-a, p, h2, h6, input {
+p, h2, h6, ul {
+  margin: 0;
+}
+
+p, h2, h6 {
   margin-bottom: 1.071rem
 }
 
@@ -33,7 +37,7 @@ p, .search-bar_input-field, .chat-room_input-field, .chat-room-header_contact-na
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2.4;
+  letter-spacing: 2.4px;
 }
 
 .chat-contacts_name, .chat-contacts_add-new-contact--button {
@@ -56,4 +60,5 @@ p {
 
 .input-field::placeholder {
   opacity: 0.25;
+  font-weight: bold;
 }
